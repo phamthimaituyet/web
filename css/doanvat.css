@@ -1,0 +1,255 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  overflow: auto;
+  font-size: 10px;
+}
+
+.root {
+  background-color: #FAF3E0;
+  height: auto;
+  width: 100%;
+}
+
+.root .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.root .container .shop-page-title-category-page-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+}
+
+.root .container .shop-page-title-category-page-title .shop-page-title {
+  width: 70%;
+}
+
+.root .container .shop-page-title-category-page-title .shop-page-title a {
+  color: rebeccapurple;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.root .container .shop-page-title-category-page-title .shop-page-title span {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+
+.root .container .list-product {
+  margin: 0;
+  float: left;
+  width: 30%;
+}
+
+.root .container .list-product .products-list h2 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  padding: 10px 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.root .container .list-product .products-list h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 64%;
+  height: 2px;
+  background-color: black;
+}
+
+.root .container .list-product .products-list .list-products {
+  padding: 10px;
+  background-color: burlywood;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.root .container .list-product .products-list .list-products ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.root .container .list-product .products-list .list-products ul li {
+  padding: 10px;
+  border-bottom: oldlace solid 1px;
+}
+
+.root .container .list-product .products-list .list-products ul li:last-child {
+  border-bottom: 0;
+}
+
+.root .container .list-product .products-list .list-products ul li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.root .container .list-product .products-list .list-products ul li a img {
+  float: left;
+}
+
+.root .container .list-product .products-list .list-products ul li a p {
+  color: black;
+  font-size: 15px;
+  font-family: sans-serif;
+  float: left;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.root .container .list-product .products-selling h2 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  padding: 10px 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.root .container .list-product .products-selling h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 64%;
+  height: 2px;
+  background-color: black;
+}
+
+.root .container .list-product .products-selling .list-products-selling {
+  padding: 10px;
+  background-color: burlywood;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li {
+  padding: 10px;
+  border-bottom: oldlace solid 1px;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li:last-child {
+  border-bottom: 0;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li a img {
+  float: left;
+  width: 50px;
+  padding-top: 5px;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li a p {
+  color: black;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  float: left;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li a:hover p {
+  color: brown;
+  text-decoration: none;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li p {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: brown;
+  left: 10px;
+  text-align: center;
+}
+
+.root .container .fast-food {
+  background-color: burlywood;
+  height: auto;
+}
+
+.root .container .fast-food .products-fast-food {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.root .container .fast-food .products-fast-food .products {
+  padding: 0;
+  padding: 5px 5px;
+  width: 25%;
+  margin: 0;
+  float: left;
+}
+
+.root .container .fast-food .products-fast-food .products .sale {
+  width: 62px;
+  height: 30px;
+  background-color: #E67E22;
+  position: absolute;
+  top: 31px;
+  overflow: visible;
+}
+
+.root .container .fast-food .products-fast-food .products .sale p {
+  font-size: 13px;
+  margin: 0;
+  text-align: center;
+  padding: 7px;
+  color: #8A1000;
+  font-weight: bold;
+}
+
+.root .container .fast-food .products-fast-food .products a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.root .container .fast-food .products-fast-food .products a img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.root .container .fast-food .products-fast-food .products a .content-cost {
+  position: relative;
+  background-color: #8A1000;
+}
+
+.root .container .fast-food .products-fast-food .products a .content-cost h3 {
+  color: #C6D900;
+  padding: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.root .container .fast-food .products-fast-food .products a .content-cost p {
+  color: #C6D900;
+  padding: 10px;
+  margin: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.root .container .fast-food .products-fast-food .products a:hover a {
+  color: #E67E22;
+  text-decoration: none;
+}
+/*# sourceMappingURL=doanvat.css.map */

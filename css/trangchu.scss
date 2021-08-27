@@ -1,0 +1,678 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    overflow: auto;
+    font-size: 10px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header{
+    overflow: auto;
+    background-color: #691900;
+    width: 100%;
+
+    .menu{
+        margin: auto;
+        width: 100%;
+        overflow: auto;
+        display: flex;
+
+        .icon{
+            display: none;
+            text-align: left;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li{
+                float: left;
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 12px;
+                text-decoration: none;
+
+                form{
+                    display: flex;
+
+                    input{
+                            padding: 9px;
+                            font-size: 1.3rem;
+                            float: left;
+                    }
+                    button{
+                             padding: 1.5px 1.5px;
+                             background-color: yellowgreen;
+                             border: none;
+                    }
+                }
+
+                a{
+                    color: #F6F3DE;
+                    text-decoration: none;
+                    display: block;
+                    padding: 8px 15px;
+                    font-family: sans-serif;
+                    font-size: 15px;
+                }
+
+                &:hover a{
+                    background-color: #c23616;
+                    transition: all 0.3s;
+                }
+            }
+
+        }
+
+        .logo{
+            a{
+                display: inline-block;
+                img{
+                    height: 74px;
+                    padding: 12px 25px;
+                }
+            }
+        }
+
+        .giohang{
+            a{
+                display: inline-block;
+                img{
+                    height: 60px;
+                    padding: 14px 8px;
+                }
+            }
+        }
+    }
+}
+.root{
+    .root-header{
+        .move{
+            overflow: hidden;
+            width: 1500px;
+            margin: 0 auto;
+
+            .move-img{
+                -webkit-animation: anh 5s ease infinite;
+                width: 5000px;
+
+                .anh{
+                    width: 1500px;
+                    float: left;
+                    img{
+                        width: 100%;
+                    }
+
+                    @-webkit-keyframes anh{
+                        0% {margin-left: 0px;}
+                        30%{margin-left: -1500px;}
+                        50%{margin-left: -1500px;}
+                        70%{margin-left: -3000px;}
+                        100%{margin-left: -3000px;}
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .root-thanh{
+        width: 100%;
+        background-color: #FAF3E0;
+        padding: 32px 2px;
+
+        .thanh{
+            width: 1165px;
+            height: 12px;
+            background-color: #D5CCAB;
+            border-radius: 8px;
+        }
+    }
+
+    .root-thongtin{
+        width: 100%;
+        border-bottom: #691900 solid 1px;
+        background-color: #FDF9EF;
+        display: flex;
+
+        .content-inf{
+            display: flex;
+            .icon{
+                a{
+                    text-decoration: none;
+                    display: inline-block;
+
+                }
+            }
+            p{
+                font-size: 17px;
+                padding-left: 20px;
+                font-family: sans-serif;
+
+            }
+
+        }
+
+
+    }
+
+    .root-product{
+        background-color: #FAF3E0 ;
+        height: auto;
+        .content-product{
+            overflow: auto;
+            
+            .list-product{
+                margin: 0;
+                float: left;
+                width: 30%;
+
+                .products-list{
+                    h2{
+                        font-size: 2rem;
+                        font-family: sans-serif;
+                        padding: 10px 10px;
+                        margin: 10px;
+                        position: relative;
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 10px;
+                            width: 64%;
+                            height: 2px;
+                            background-color: black;
+                        }
+                    }
+                    .list-products{
+                        padding: 10px;
+                        background-color: burlywood;
+                        border-radius: 8px;
+                        margin: 10px;
+
+                        ul{
+                            padding: 0px;
+                            list-style-type: none;
+                            li{
+                                padding: 10px;
+                                border-bottom: oldlace solid 1px;
+
+                                &:last-child{
+                                    border-bottom: 0;
+                                }
+
+                                a{
+                                    display: inline-block;
+                                    text-decoration: none;
+                                    img{
+                                        float: left;
+                                    }
+                                    p{
+                                    color: black;
+                                    font-size: 15px;
+                                    font-family: sans-serif;
+                                    float: left;
+                                    padding: 0;
+                                    margin: 0;
+                                    padding-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .products-selling{
+                    h2{
+                        font-size: 2rem;
+                        font-family: sans-serif;
+                        padding: 10px 10px;
+                        margin: 10px;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 10px;
+                            width: 64%;
+                            height: 2px;
+                            background-color: black;
+                        }
+                    }
+                    .list-products-selling{
+                        padding: 10px;
+                        background-color: burlywood;
+                        border-radius: 8px;
+                        margin: 10px;
+                        ul{
+                            padding: 0px;
+                            list-style-type: none;
+                            li{
+                                padding: 10px;
+                                border-bottom: oldlace solid 1px;
+    
+                                &:last-child{
+                                    border-bottom: 0;
+                                }
+    
+                                a{
+                                    display: inline-block;
+                                    text-decoration: none;
+                                    img{
+                                        float: left;
+                                        width: 50px;
+                                        padding-top: 5px;
+                                    }
+                                    p{
+                                    color: black;
+                                    font-size: 1.5rem;
+                                    font-family: sans-serif;
+                                    float: left;
+                                    padding: 0;
+                                    margin: 0;
+                                    padding-left: 10px;
+                                    padding-top: 10px;
+                                    }
+                                    &:hover p {
+                                        color: brown;
+                                        text-decoration: none;
+                                    }
+                                }
+                                p{
+                                    font-size: 1.6rem;
+                                    font-family: sans-serif;
+                                    color: brown;
+                                    left: 10px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+            .list-menu{
+                margin: 0;
+                padding-left: 10px;
+                float: left;
+                width: 70%;
+
+                .night-food{
+                    h2{
+                        font-size: 20px;
+                        font-family: sans-serif;
+                        padding: 10px 10px;
+                        margin: 10px;
+                        display: inline-block;
+                        position: relative;
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            right: 10px;
+                            width: 90%;
+                            height: 1px;
+                            background-color:#DE7C20;
+                        }
+                    }
+
+                    .products-night-food{
+                        background-color: burlywood;
+                        margin: 5px;
+                        padding: 5px;
+                        border-radius: 8px;
+                        position: relative;
+
+                        .products{
+                            padding: 0;
+                            padding: 5px 5px;
+                            width: 33.33%;
+                            margin: 0;
+                            float: left;
+
+                            .sale{
+                                width: 62px;
+                                height: 30px;
+                                background-color: #C6D900;
+                                position: absolute;
+                                top: 31px;
+                                overflow: visible;
+
+                                p{
+                                    font-size: 13px;
+                                    margin: 0;
+                                    text-align: center;
+                                    padding: 7px;
+                                    color: #8A1000;
+                                    font-weight: bold;
+                                }
+                            }
+                            a{  
+                                display: inline-block;
+                                text-decoration: none;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    display: block;
+                                    transition: all 0.5s;
+                                }
+                              /*  &:hover img{
+                                        -ms-transform: scale(1.5,1.5);
+                                        -webkit-transform: scale(1.5,1.5); 
+                                        transform: scale(1.5,1.5);
+                                        width: 100%;
+                                }*/
+                                .content-cost{
+                                    position: relative;
+                                    background-color: #8A1000;
+                                    h3{
+                                        color:#C6D900 ;
+                                        padding: 10px;
+                                        margin: 10px;
+                                        font-family: sans-serif;
+                                        text-align: center;
+                                        font-size: 1.5rem;
+                                    }
+                                    p{
+                                        color: #C6D900;
+                                        padding: 10px;
+                                        margin: 10px;
+                                        font-family: sans-serif;
+                                        text-align: center;
+                                        font-size: 1.6rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .fast-food{
+                    h2{
+                        font-size: 20px;
+                        font-family: sans-serif;
+                        padding: 10px 10px;
+                        margin: 10px;
+                        display: inline-block;
+                        position: relative;
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            right: 10px;
+                            width: 90%;
+                            height: 1px;
+                            background-color:#DE7C20;
+                        }
+                    }
+
+                    .products-fast-food{
+                        background-color: burlywood;
+                        margin: 5px;
+                        padding: 5px;
+                        border-radius: 8px;
+                        position: relative;
+
+                        .products{
+                            padding: 0;
+                            padding: 5px 5px;
+                            width: 33.33%;
+                            margin: 0;
+                            float: left;
+
+                            .sale{
+                                width: 62px;
+                                height: 30px;
+                                background-color: #C6D900;
+                                position: absolute;
+                                top: 31px;
+                                overflow: visible;
+
+                                p{
+                                    font-size: 13px;
+                                    margin: 0;
+                                    text-align: center;
+                                    padding: 7px;
+                                    color: #8A1000;
+                                    font-weight: bold;
+                                }
+                            }
+                            a{  
+                                display: inline-block;
+                                text-decoration: none;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    display: block;
+                                }
+                                .content-cost{
+                                    position: relative;
+                                    background-color: #8A1000;
+                                    h3{
+                                        color:#C6D900 ;
+                                        padding: 10px;
+                                        margin: 10px;
+                                        font-family: sans-serif;
+                                        text-align: center;
+                                        font-size: 1.5rem;
+                                    }
+                                    p{
+                                        color: #C6D900;
+                                        padding: 10px;
+                                        margin: 10px;
+                                        font-family: sans-serif;
+                                        text-align: center;
+                                        font-size: 1.6rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .drinks{
+                    h2{
+                        font-size: 20px;
+                        font-family: sans-serif;
+                        padding: 10px 10px;
+                        margin: 10px;
+                        display: inline-block;
+                        position: relative;
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            right: 10px;
+                            width: 90%;
+                            height: 1px;
+                            background-color:#DE7C20;
+                        }
+                    }
+
+                    .products-drinks{
+                        background-color: burlywood;
+                        margin: 5px;
+                        padding: 5px;
+                        border-radius: 8px;
+                        position: relative;
+
+                        .products{
+                            padding: 0;
+                            padding: 5px 5px;
+                            width: 33.33%;
+                            margin: 0;
+                            float: left;
+
+                            .sale{
+                                width: 62px;
+                                height: 30px;
+                                background-color: #C6D900;
+                                position: absolute;
+                                top: 31px;
+                                overflow: visible;
+
+                                p{
+                                    font-size: 13px;
+                                    margin: 0;
+                                    text-align: center;
+                                    padding: 7px;
+                                    color: #8A1000;
+                                    font-weight: bold;
+                                }
+                            }
+                            a{  
+                                display: inline-block;
+                                text-decoration: none;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    display: block;
+                                }
+                                .content-cost{
+                                    position: relative;
+                                    background-color: #8A1000;
+                                    h3{
+                                        color:#C6D900 ;
+                                        padding: 10px;
+                                        margin: 10px;
+                                        font-family: sans-serif;
+                                        text-align: center;
+                                        font-size: 1.5rem;
+                                    }
+                                    p{
+                                        color: #C6D900;
+                                        padding: 10px;
+                                        margin: 10px;
+                                        font-family: sans-serif;
+                                        text-align: center;
+                                        font-size: 1.6rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        
+        }
+
+        .inf-promotion{
+            padding-top:48px;
+            .inf-promotion-header{
+                display: flex;
+                b{
+                    width: 40%;
+                    height: 1.5px;
+                    background-color: #C6D900;
+                }
+                h2{
+                    text-align: center;
+                    font-size: 2rem;
+                    font-family: sans-serif;
+                    width: 20%;
+                }
+            }
+            .new-promotion{
+                padding: 5px;
+                margin: 2px;
+                display: flex;
+                .news{
+                    float: left;
+                    width: 25%;
+                    padding: 10px 10px;
+                    a{
+                        text-decoration: none;
+                        display: inline-block;
+                        img{
+                            width: 100%;
+                            display: block;
+                            height: 260px;
+                        }
+    
+                        .content-inf{
+                            background-color: #D5CCAB;
+                            h2{
+                                font-size: 1.8rem;
+                                font-family: sans-serif;
+                                font-weight: bold;
+                                position: relative;
+                                padding: 10px;
+                                &::after{
+                                    content: "";
+                                    position: absolute;
+                                    width: 20%;
+                                    left: 100px;
+                                    bottom: 0;
+                                    height: 2px;
+                                    background-color:black;
+                                }
+                            }
+                            p{
+                                font-size: 1.5rem;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ 
+}
+.information{
+    background-color: #8a1000;
+    .thong-tin{
+        display: flex;
+        padding-top: 10px;
+        .inf{
+            width: 33.33%;
+            margin: 0;
+            padding: 15px;
+            h2{
+                font-size: 2rem;
+                color: #C6D900;
+                font-family: sans-serif;
+                position: relative;
+                &::after{
+                    content: "";
+                    height: 1px;
+                    left: 0px;
+                    background-color: #C6D900;
+                    bottom: 0;
+                    position: absolute;
+                    width: 16%;
+                }
+            }
+            p{
+                font-size: 1.7rem;
+                font-family: sans-serif;
+                padding: 20px;
+                color: white;
+                padding-left: 0px;
+                line-height: 1.7;
+
+                i{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+@import "responsive";

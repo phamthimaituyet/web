@@ -1,0 +1,158 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  overflow: auto;
+  font-size: 10px;
+}
+
+.root {
+  background-color: #FAF3E0;
+  height: auto;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.root .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.root .container .list-product {
+  margin: 0;
+  float: left;
+  width: 30%;
+}
+
+.root .container .list-product .products-list h2 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  padding: 10px 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.root .container .list-product .products-list h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 64%;
+  height: 2px;
+  background-color: black;
+}
+
+.root .container .list-product .products-list .list-products {
+  padding: 10px;
+  background-color: burlywood;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.root .container .list-product .products-list .list-products ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.root .container .list-product .products-list .list-products ul li {
+  padding: 10px;
+  border-bottom: oldlace solid 1px;
+}
+
+.root .container .list-product .products-list .list-products ul li:last-child {
+  border-bottom: 0;
+}
+
+.root .container .list-product .products-list .list-products ul li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.root .container .list-product .products-list .list-products ul li a img {
+  float: left;
+}
+
+.root .container .list-product .products-list .list-products ul li a p {
+  color: black;
+  font-size: 15px;
+  font-family: sans-serif;
+  float: left;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.root .container .list-product .products-selling h2 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  padding: 10px 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.root .container .list-product .products-selling h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 64%;
+  height: 2px;
+  background-color: black;
+}
+
+.root .container .list-product .products-selling .list-products-selling {
+  padding: 10px;
+  background-color: burlywood;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li {
+  padding: 10px;
+  border-bottom: oldlace solid 1px;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li:last-child {
+  border-bottom: 0;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li a img {
+  float: left;
+  width: 50px;
+  padding-top: 5px;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li a p {
+  color: black;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  float: left;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li a:hover p {
+  color: brown;
+  text-decoration: none;
+}
+
+.root .container .list-product .products-selling .list-products-selling ul li p {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: brown;
+  left: 10px;
+  text-align: center;
+}
+/*# sourceMappingURL=chitietsanpham.css.map */

@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    overflow: auto;
+    font-size: 10px;
+}
+.root{
+    background-color: #FAF3E0;
+    height: auto;
+    width: 100%;
+    .container{
+        max-width: 1200px;
+        margin: auto;
+        .shop-page-title-category-page-title{
+            display: flex;
+            padding: 15px;
+            .shop-page-title{
+                width: 70%;
+                a{
+                    color: rebeccapurple;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                }
+                span{
+                    font-size: 1.5rem;
+                    font-family: sans-serif;
+                }
+                   
+            }
+        }
+        .list-product{
+            margin: 0;
+            float: left;
+            width: 30%;
+
+            .products-list{
+                h2{
+                    font-size: 2rem;
+                    font-family: sans-serif;
+                    padding: 10px 10px;
+                    margin: 10px;
+                    position: relative;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 10px;
+                        width: 64%;
+                        height: 2px;
+                        background-color: black;
+                    }
+                }
+                .list-products{
+                    padding: 10px;
+                    background-color: burlywood;
+                    border-radius: 8px;
+                    margin: 10px;
+
+                    ul{
+                        padding: 0px;
+                        list-style-type: none;
+                        li{
+                            padding: 10px;
+                            border-bottom: oldlace solid 1px;
+
+                            &:last-child{
+                                border-bottom: 0;
+                            }
+
+                            a{
+                                display: inline-block;
+                                text-decoration: none;
+                                img{
+                                    float: left;
+                                }
+                                p{
+                                color: black;
+                                font-size: 15px;
+                                font-family: sans-serif;
+                                float: left;
+                                padding: 0;
+                                margin: 0;
+                                padding-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .products-selling{
+                h2{
+                    font-size: 2rem;
+                    font-family: sans-serif;
+                    padding: 10px 10px;
+                    margin: 10px;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 10px;
+                        width: 64%;
+                        height: 2px;
+                        background-color: black;
+                    }
+                }
+                .list-products-selling{
+                    padding: 10px;
+                    background-color: burlywood;
+                    border-radius: 8px;
+                    margin: 10px;
+                    ul{
+                        padding: 0px;
+                        list-style-type: none;
+                        li{
+                            padding: 10px;
+                            border-bottom: oldlace solid 1px;
+
+                            &:last-child{
+                                border-bottom: 0;
+                            }
+
+                            a{
+                                display: inline-block;
+                                text-decoration: none;
+                                img{
+                                    float: left;
+                                    width: 50px;
+                                    padding-top: 5px;
+                                }
+                                p{
+                                color: black;
+                                font-size: 1.5rem;
+                                font-family: sans-serif;
+                                float: left;
+                                padding: 0;
+                                margin: 0;
+                                padding-left: 10px;
+                                padding-top: 10px;
+                                }
+                                &:hover p {
+                                    color: brown;
+                                    text-decoration: none;
+                                }
+                            }
+                            p{
+                                font-size: 1.6rem;
+                                font-family: sans-serif;
+                                color: brown;
+                                left: 10px;
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+        .fast-food{
+            background-color: burlywood;
+            height: auto;
+            .products-fast-food{
+                margin: 5px;
+                padding: 5px;
+                border-radius: 8px;
+                position: relative;
+
+                .products{
+                    padding: 0;
+                    padding: 5px 5px;
+                    width: 25%;
+                    margin: 0;
+                    float: left;
+
+                    .sale{
+                        width: 62px;
+                        height: 30px;
+                        background-color: #E67E22;
+                        position: absolute;
+                        top: 31px;
+                        overflow: visible;
+
+                        p{
+                            font-size: 13px;
+                            margin: 0;
+                            text-align: center;
+                            padding: 7px;
+                            color: #8A1000;
+                            font-weight: bold;
+                        }
+                    }
+                    a{  
+                        display: inline-block;
+                        text-decoration: none;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                        }
+                        .content-cost{
+                            position: relative;
+                            background-color: #8A1000;
+                            h3{
+                                color:#C6D900 ;
+                                padding: 10px;
+                                font-family: sans-serif;
+                                text-align: center;
+                                font-size: 1.5rem;
+                            }
+                            p{
+                                color: #C6D900;
+                                padding: 10px;
+                                margin: 10px;
+                                font-family: sans-serif;
+                                text-align: center;
+                                font-size: 1.6rem;
+                            }
+                        }
+                         &:hover a {
+                             color: #E67E22;
+                             text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

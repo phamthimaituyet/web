@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    overflow: auto;
+    font-size: 10px;
+}
+.root{
+    background-color: #FAF3E0;
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+    .container{
+        max-width: 1200px;
+        margin: auto;
+
+        .row-new{
+            display: flex;
+            
+            .row1{
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                .news{
+                    margin: 0;
+                    padding: 10px;
+                    a{
+                        text-decoration: none;
+                        img{
+                            float: left;
+                        }
+                        .content-inf{
+                            float: left;
+                            padding: 20px;
+                            h2{
+                                font-size: 1.7em;
+                            }
+                            p{
+                                font-size: 1.7em;
+                            }
+    
+                        }
+                        &:hover a {
+                            color: rebeccapurple;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .list-product{
+                margin: 0;
+                float: right;
+                width: 30%;
+    
+                .products-list{
+                    h2{
+                        font-size: 2rem;
+                        font-family: sans-serif;
+                        padding: 10px 10px;
+                        margin: 10px;
+                        position: relative;
+    
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 10px;
+                            width: 64%;
+                            height: 2px;
+                            background-color: black;
+                        }
+                    }
+                    .list-products{
+                        padding: 10px;
+                        background-color: burlywood;
+                        border-radius: 8px;
+                        margin: 10px;
+    
+                        ul{
+                            padding: 0px;
+                            list-style-type: none;
+                            li{
+                                padding: 10px;
+                                border-bottom: oldlace solid 1px;
+    
+                                &:last-child{
+                                    border-bottom: 0;
+                                }
+    
+                                a{
+                                    display: inline-block;
+                                    text-decoration: none;
+                                    img{
+                                        float: left;
+                                    }
+                                    p{
+                                    color: black;
+                                    font-size: 15px;
+                                    font-family: sans-serif;
+                                    float: left;
+                                    padding: 0;
+                                    margin: 0;
+                                    padding-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .products-selling{
+                    h2{
+                        font-size: 2rem;
+                        font-family: sans-serif;
+                        padding: 10px 10px;
+                        margin: 10px;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 10px;
+                            width: 64%;
+                            height: 2px;
+                            background-color: black;
+                        }
+                    }
+                    .list-products-selling{
+                        padding: 10px;
+                        background-color: burlywood;
+                        border-radius: 8px;
+                        margin: 10px;
+                        ul{
+                            padding: 0px;
+                            list-style-type: none;
+                            li{
+                                padding: 10px;
+                                border-bottom: oldlace solid 1px;
+    
+                                &:last-child{
+                                    border-bottom: 0;
+                                }
+    
+                                a{
+                                    display: inline-block;
+                                    text-decoration: none;
+                                    img{
+                                        float: left;
+                                        width: 50px;
+                                        padding-top: 5px;
+                                    }
+                                    p{
+                                    color: black;
+                                    font-size: 1.5rem;
+                                    font-family: sans-serif;
+                                    float: left;
+                                    padding: 0;
+                                    margin: 0;
+                                    padding-left: 10px;
+                                    padding-top: 10px;
+                                    }
+                                    &:hover p {
+                                        color: brown;
+                                        text-decoration: none;
+                                    }
+                                }
+                                p{
+                                    font-size: 1.6rem;
+                                    font-family: sans-serif;
+                                    color: brown;
+                                    left: 10px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+    
+                    }
+    
+                }
+            }
+        }
+    }
+}

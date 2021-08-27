@@ -1,0 +1,99 @@
+@media (max-width: 768px) {
+    
+    .header{
+        .container{
+            .menu{
+                display: flex;
+
+                .icon{
+                    display: block;
+                    padding: 24px 10px;
+                }
+                ul{
+                    flex-direction: column;
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .root{
+        .root-header{
+            .move{
+                width: 768px;
+                .move-img{
+                    width: 3000px;
+                    .anh{
+                        width: 768px;
+                        img{
+                           width: 100%;
+                        }
+                        @-webkit-keyframes anh{
+                            0% {margin-left: 0px;}
+                            25%{margin-left: -768px;}
+                            50%{margin-left: -768px;}
+                            75%{margin-left: -1536px;}
+                            100%{margin-left:  0px;}
+                        }
+                    }
+                }
+            }
+        }
+        
+        .root-thanh{
+            .thanh{
+                @media (max-width: 300px) {
+                    width: 200px;
+                    height: 7px;
+                }
+                @media (min-width: 300px) {
+                    width: 500px;
+                    height: 8px;
+                }
+            }
+        }
+
+        .root-thongtin{
+            flex-direction: column;
+            .content-inf{
+                margin-left: 0;
+            }
+        }
+
+        .root-product{
+            .content-product{
+                .list-menu{
+                    .night-food{
+                        .products-night-food{
+                            .products{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .fast-food{
+                        .products-fast-food{
+                            .products{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .drinks{
+                        .products-drinks{
+                            .products{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .inf-promotion{
+                .new-promotion{
+                    .news{
+                         width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
